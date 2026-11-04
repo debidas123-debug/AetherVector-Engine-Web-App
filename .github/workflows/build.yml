@@ -27,7 +27,7 @@ jobs:
 
       - name: install dependencies (windows)
         if: matrix.platform == 'windows-latest'
-        run: npm ci
+        run: npm install
 
       - name: run tauri build
         uses: tauri-apps/tauri-action@v0
